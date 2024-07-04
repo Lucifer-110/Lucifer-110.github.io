@@ -6,23 +6,23 @@ $(document).ready(function(){
         arrows: false,
     });
 
-    $('.product-carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    });
+    //$('.product-carousel').slick({
+        //slidesToShow: 1,
+        //slidesToScroll: 1,
+        //autoplay: true,
+        //autoplaySpeed: 2000,
+        //dots: true,
+        //arrows: false,
+        //responsive: [
+            //{
+                //breakpoint: 768,
+               // settings: {
+                 //   slidesToShow: 1,
+                  //  slidesToScroll: 1,
+               // }
+            //}
+       // ]
+   // });
 
     $('.product').each(function(){
         $(this).slick({
