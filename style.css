@@ -28,9 +28,12 @@ nav ul li a {
 }
 
 .banner {
-    background-color: #f4f4f4;
-    padding: 100px 0;
-    text-align: center;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
 #products {
@@ -38,9 +41,12 @@ nav ul li a {
     text-align: center;
 }
 
+.product-carousel {
+    display: flex;
+    justify-content: center;
+}
+
 .product {
-    display: inline-block;
-    margin: 20px;
     text-align: center;
     cursor: pointer;
     max-width: 300px;
@@ -50,6 +56,11 @@ nav ul li a {
 .product img {
     max-width: 100%;
     height: auto;
+    display: none; /* 隐藏所有图片 */
+}
+
+.product img:first-child {
+    display: block; /* 显示第一张图片 */
 }
 
 #contact {
@@ -69,7 +80,7 @@ nav ul li a {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: yellow; /* 更改底色为黄色 */
+    background-color: yellow;
     color: black;
     border-radius: 50%;
     display: flex;
@@ -113,8 +124,8 @@ nav ul li a {
     
     .contact-options {
         gap: 5px;
-        flex-direction: row; /* 更改为横排 */
-        flex-wrap: nowrap; /* 不换行 */
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .contact-options a {
